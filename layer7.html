@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 7 — Application Layer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./layer-styles.css">
+</head>
+<body class="detail-page" data-layer="7">
+    <a href="./index.html" class="back-button">← Back to Layers</a>
+    
+    <div class="content">
+        <h1>Application Layer (Layer 7)</h1>
+        
+        <div class="section">
+            <h2>Definition</h2>
+            <p>The Application Layer is the topmost layer in the OSI model where users interact with network services. It provides protocols and services directly to end-user applications.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Key Protocols</h2>
+            <ul>
+                <li><strong>HTTP/HTTPS:</strong> Web browsing and secure data transfer</li>
+                <li><strong>FTP:</strong> File transfer between systems</li>
+                <li><strong>SMTP:</strong> Email transmission</li>
+                <li><strong>DNS:</strong> Domain name resolution</li>
+                <li><strong>TELNET:</strong> Remote terminal access</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Real-world Applications</h2>
+            <ul>
+                <li>Web browsers (Chrome, Firefox, Safari)</li>
+                <li>Email clients (Outlook, Gmail)</li>
+                <li>File sharing applications</li>
+                <li>Social media platforms</li>
+                <li>Remote desktop applications</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Interaction with Lower Layers</h2>
+            <ul>
+                <li>Formats data for presentation layer processing</li>
+                <li>Initiates communication sessions</li>
+                <li>Ensures proper data formatting for network transmission</li>
+                <li>Manages application level security</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Security and User Experience</h2>
+            <ul>
+                <li>Implements encryption for secure data transmission</li>
+                <li>Handles user authentication and authorization</li>
+                <li>Manages digital certificates and secure connections</li>
+                <li>Secures the data integrity and confidentiality</li>
+                <li>Provides user interface for network services</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Small UX: press Esc to go back
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') window.location.href = '../index.html'; });
+    </script>
+</body>
+</html>

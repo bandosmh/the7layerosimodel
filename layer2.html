@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Link Layer (Layer 2) - OSI Model</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./layer-styles.css">
+    <style>
+        .frame-structure {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .frame-part {
+            padding: 10px;
+            border: 1px solid #D4A5A5;
+            border-radius: 5px;
+            margin: 0 5px;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .frame-part:hover {
+            transform: translateY(-5px);
+            background: rgba(212, 165, 165, 0.1);
+        }
+    </style>
+</head>
+<body class="detail-page" data-layer="2">
+    <a href="./index.html" class="back-button">← Back to Layers</a>
+    
+    <div class="content">
+        <h1>Data Link Layer (Layer 2)</h1>
+        
+        <div class="section">
+            <h2>Definition</h2>
+            <p>The Data Link Layer handles node-to-node data delivery on a local network segment, managing physical addressing, error detection, and flow control.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Frame Structure</h2>
+            <div class="frame-structure">
+                <div class="frame-part">
+                    <strong>Preamble</strong>
+                    <p>Synchronization</p>
+                </div>
+                <div class="frame-part">
+                    <strong>MAC Header</strong>
+                    <p>Addresses</p>
+                </div>
+                <div class="frame-part">
+                    <strong>Data</strong>
+                    <p>Payload</p>
+                </div>
+                <div class="frame-part">
+                    <strong>FCS</strong>
+                    <p>Error Check</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Core Functions</h2>
+            <ul>
+                <li><strong>Framing:</strong> Packaging data into frames</li>
+                <li><strong>Physical Addressing:</strong> MAC address management</li>
+                <li><strong>Error Control:</strong> Detection and correction</li>
+                <li><strong>Flow Control:</strong> Managing data transmission rate</li>
+                <li><strong>Access Control:</strong> Managing media access</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Protocols and Standards</h2>
+            <ul>
+                <li><strong>Ethernet:</strong> Most common LAN technology</li>
+                <li><strong>Wi-Fi (802.11):</strong> Wireless networking</li>
+                <li><strong>PPP:</strong> Point-to-Point Protocol</li>
+                <li><strong>HDLC:</strong> High-level Data Link Control</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Network Devices</h2>
+            <ul>
+                <li><strong>Switches:</strong> Intelligent frame forwarding</li>
+                <li><strong>Bridges:</strong> Connect network segments</li>
+                <li><strong>Network Interface Cards:</strong> Physical network access</li>
+                <li><strong>Wireless Access Points:</strong> Wireless connectivity</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

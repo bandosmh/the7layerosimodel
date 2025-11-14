@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Layer (Layer 1) - OSI Model</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./layer-styles.css">
+    <style>
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .media-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .media-box:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .media-box i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #9B9B9B;
+        }
+    </style>
+</head>
+<body class="detail-page" data-layer="1">
+    <a href="./index.html" class="back-button">← Back to Layers</a>
+    
+    <div class="content">
+        <h1>Physical Layer (Layer 1)</h1>
+        
+        <div class="section">
+            <h2>Definition</h2>
+            <p>The Physical Layer defines the electrical, mechanical, and functional characteristics of the physical network, handling the transmission of raw bits over a physical medium.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Core Functions</h2>
+            <ul>
+                <li><strong>Bit Transmission:</strong> Converting data to signals</li>
+                <li><strong>Physical Topology:</strong> Network layout design</li>
+                <li><strong>Transmission Mode:</strong> Simplex, half-duplex, full-duplex</li>
+                <li><strong>Line Configuration:</strong> Point-to-point and multipoint</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Transmission Media</h2>
+            <div class="media-grid">
+                <div class="media-box">
+                    <h3>Copper Cables</h3>
+                    <ul>
+                        <li>UTP/STP</li>
+                        <li>Coaxial</li>
+                        <li>Electrical signals</li>
+                    </ul>
+                </div>
+                <div class="media-box">
+                    <h3>Fiber Optics</h3>
+                    <ul>
+                        <li>Single-mode</li>
+                        <li>Multi-mode</li>
+                        <li>Light signals</li>
+                    </ul>
+                </div>
+                <div class="media-box">
+                    <h3>Wireless</h3>
+                    <ul>
+                        <li>Radio waves</li>
+                        <li>Microwaves</li>
+                        <li>Infrared</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Hardware Components</h2>
+            <ul>
+                <li><strong>Network Interface Cards (NICs):</strong> Network connectivity</li>
+                <li><strong>Repeaters:</strong> Signal amplification</li>
+                <li><strong>Hubs:</strong> Physical layer connectivity</li>
+                <li><strong>Cables and Connectors:</strong> Physical medium</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Signal Characteristics</h2>
+            <ul>
+                <li><strong>Bandwidth:</strong> Data transmission capacity</li>
+                <li><strong>Frequency:</strong> Signal oscillation rate</li>
+                <li><strong>Attenuation:</strong> Signal loss over distance</li>
+                <li><strong>Noise:</strong> Interference management</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

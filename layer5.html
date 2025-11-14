@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Layer (Layer 5) - OSI Model</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./layer-styles.css">
+</head>
+<body class="detail-page" data-layer="5">
+    <a href="./index.html" class="back-button">← Back to Layers</a>
+    
+    <div class="content">
+        <h1>Session Layer (Layer 5)</h1>
+
+        <div class="section">
+            <h2>Definition</h2>
+            <p>Layer 5 of the OSI model, called the Session Layer, is responsible for establishing, managing, and canceling communication sessions between two applications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Session Setup</h2>
+            <ul>
+                <li>Initiates a connection between applications on different devices.</li>
+                <li>Establishes session parameters like authentication, authorization, and connection settings.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Session Maintenance</h2>
+            <ul>
+                <li>Manages data exchange during communication.</li>
+                <li>Keeps track of which side is sending or receiving at any given time (dialog control).</li>
+                <li>Handles checkpoints or synchronization points so that if a failure occurs, data transfer can resume instead of restarting.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Session Termination</h2>
+            <p>Closes sessions once communication is complete, ensuring all data has been properly transmitted.</p>
+        </div>
+
+        <div class="section">
+            <h2>Synchronization</h2>
+            <p>Inserts “checkpoints” into long data transfers (such as large file transfers or video streams), allowing resumption from the last checkpoint if interrupted.</p>
+        </div>
+
+        <div class="section">
+            <h2>Example Protocols</h2>
+            <ul>
+                <li><strong>NetBIOS</strong> — Manages session communication and name registration for networked devices, especially in older Windows networks.</li>
+                <li><strong>SCP (Session Control Protocol)</strong> — Used in DECnet for managing and controlling sessions between nodes.</li>
+                <li><strong>ASP (AppleTalk Session Protocol)</strong> — Provides session services for AppleTalk networks, handling session establishment and termination.</li>
+                <li><strong>SOCKS5</strong> — Manages session control for proxy connections, authenticating and maintaining data flow between client and server.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ongoing Communications (e.g., video calls)</h2>
+            <ul>
+                <li>Keeps the session open and synchronized as data continuously flows.</li>
+                <li>Detects interruptions or idle periods and can reestablish sessions automatically.</li>
+                <li>Ensures both devices remain in agreement about the session’s state (for example, whether it’s paused, active, or ended).</li>
+                <li>Uses synchronization points to resume communication from a specific point if the connection temporarily fails.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Relationship to Other Layers</h2>
+            <ul>
+                <li>With the Presentation Layer (Layer 6): Prepares and hands off formatted, encrypted, or compressed data so the Session Layer can manage the session carrying that data.</li>
+                <li>With the Transport Layer (Layer 4): Relies on Transport services (like reliable delivery) to move the session’s data between endpoints.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>The Session Layer manages the connection between two computers or devices. It starts and keeps the connection open while they share data, ensures the connection stays stable during things like video calls or online chats, and closes the connection properly when the exchange is done.</p>
+        </div>
+    </div>
+</body>
+</html>
